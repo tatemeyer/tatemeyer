@@ -10,8 +10,7 @@ just faster.
   built from first principles, developed through a strict spec-first
   workflow (design doc → plan → implementation).
 - **[Model-Experiments](https://github.com/tatemeyer/Model-Experiments)** —
-  using GitHub itself (Issues, Projects, Actions) as the harness between a
-  human and Claude Code: specify the intent and how to verify it, let the
-  agent decide the implementation.
+  ML research (physics-informed ML, JEPA) built with Claude Code via
+  Bitter Lesson Engineering: GitHub Issues, PRs, and CI as the harness.
 
 [Website](https://tatemeyer.github.io/Personal-Webpage/) · [LinkedIn](https://www.linkedin.com/in/tate-meyer2004/) · [tatemeyer04@gmail.com](mailto:tatemeyer04@gmail.com)
