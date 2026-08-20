@@ -46,6 +46,17 @@ Engineering** — intent is filed as a GitHub Issue describing the desired
 end state and how to verify it, an agent implements against that intent,
 and CI decides when it's done.
 
+### [SESH](https://github.com/tatemeyer/SESH) · Rust · TypeScript
+
+A living room that knows who's in it. A Raspberry Pi 5 daemon owns the
+TV, phones join by QR to queue what plays next, and presence rests on
+what a passive BLE scan can actually prove — 340 addresses measured in
+the room, more than half of them rotating, which is why identity has to
+be carried rather than sniffed. Built in arcs, each one closed only after
+an ordinary evening exercised it.
+
+CI proves the software. The room proves the product.
+
 ## How I work
 
 - **Spec-first** — no implementation without an approved design doc and plan.
