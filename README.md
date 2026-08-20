@@ -1,16 +1,58 @@
 # Tate Meyer
 
-Computer engineering student building developer tooling and AI systems —
-frameworks and workflows that make working *with* AI more rigorous, not
-just faster.
+I build the tooling that makes agent-written code trustworthy — specs
+before the code, blinded critics after it, and CI as the only arbiter
+of done.
 
-**Currently building:**
+Computer engineering student at KU, in Lawrence, Kansas.
 
-- **[TTUI](https://github.com/tatemeyer/ttui)** — a terminal UI framework
-  built from first principles, developed through a strict spec-first
-  workflow (design doc → plan → implementation).
-- **[Model-Experiments](https://github.com/tatemeyer/Model-Experiments)** —
-  ML research (physics-informed ML, JEPA) built with Claude Code via
-  Bitter Lesson Engineering: GitHub Issues, PRs, and CI as the harness.
+<div align="center">
+  <img src="assets/ttui-showcase.gif" alt="TTUI rendering a cockpit dashboard in the terminal" width="760">
+  <br>
+  <sub><i>TTUI, captured by Plumb — the verification tool in the next section.</i></sub>
+</div>
+
+## Build it
+
+### [TTUI](https://github.com/tatemeyer/ttui) · Rust · v1.1.0
+
+A terminal UI framework built from first principles: a full render
+pipeline (state → view → layout → paint → diff → writer), a
+constraint-based layout engine, alpha-compositing buffer layers, and a
+widget set spanning text, lists, tables, glitch effects, particle
+systems, a perspective-projection camera, and data-viz. Ten example
+apps and a flagship showcase reel exercise it.
+
+## Verify it
+
+### [Parallax](https://github.com/tatemeyer/parallax) · Rust
+
+A platform for watching and steering agent-driven work across projects.
+Its first component, **Plumb**, captures a running terminal app under a
+PTY and hands the result to four *blinded* critic agents — each sees the
+image and a run manifest, never the source or the diff. Their findings
+merge into a single GO / NO-GO / HOLD.
+
+The model that wrote the code doesn't get to grade it.
+
+## Apply it
+
+### [Model-Experiments](https://github.com/tatemeyer/Model-Experiments) · Python · PyTorch
+
+ML research pointed at the loop itself: physics-informed ML for
+electromagnetics, and JEPA work on what actually prevents
+representation collapse at toy scale. Built with **Bitter Lesson
+Engineering** — intent is filed as a GitHub Issue describing the desired
+end state and how to verify it, an agent implements against that intent,
+and CI decides when it's done.
+
+## How I work
+
+- **Spec-first** — no implementation without an approved design doc and plan.
+- **Blinded verification** — the author doesn't grade the work.
+- **CI is truth** — "done" is a green pipeline, not an opinion.
+- **Explicit autonomy** — every unit of work declares how much human review it needs.
+
+---
 
 [Website](https://tatemeyer.github.io/Personal-Webpage/) · [LinkedIn](https://www.linkedin.com/in/tate-meyer2004/) · [tatemeyer04@gmail.com](mailto:tatemeyer04@gmail.com)
